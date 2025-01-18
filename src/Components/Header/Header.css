@@ -1,0 +1,10 @@
+header {
+  background-color: var(--second-color);
+  min-height: 8vh;
+  border: 1px solid black;
+}
+
+h1 {
+  color: var(--third-color);
+  padding: 0.5em;
+}
