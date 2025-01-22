@@ -1,22 +1,36 @@
 main {
   background-color: var(--main-color);
-  min-height: 84vh;
-  max-height: auto;
+  max-height: 84vh;
+  overflow-y: scroll;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  gap: 10px;
+  display: flex;
 }
 
 .container-dropdown {
+  grid-area: 1 / 1 / 12 / 2;
   color: var(--third-color);
   background-color: var(--second-color);
   min-height: 84vh;
-  max-width: 15vw;
+  min-width: 15vw;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  padding: 1.5em;
+  padding-top: 0.5vh;
+  position: sticky;
+}
+
+.messages-container {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: repeat(11, 1fr);
+  padding-left: 5em;
+}
+
+.userMessages {
+  grid-area: 1 / 2 / 12 / 3;
+}
+
+.otherUserMessages {
+  grid-area: 1 / 3 / 12 / 3;
 }

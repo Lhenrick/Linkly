@@ -1,6 +1,8 @@
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import Message from "../../Components/Message/Message";
+import OtherUserMessage from "../../Components/OtherUserMessage/OtherUserMessage";
+import UserChat from "../../Components/UserChat/UserChat";
 import "./ChatPage.css";
 
 export default function ChatPage() {
@@ -10,14 +12,36 @@ export default function ChatPage() {
       <main>
         <div className="container">
           <aside className="container-dropdown">
-            <p>User 1</p>
-            <p>User 2</p>
-            <p>User 3</p>
-            <p>User 4</p>
-            <p>User 5</p>
+            <UserChat />
+            <UserChat />
+            <UserChat />
           </aside>
+          <section className="messages-container">
+            <div className="userMessages">
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+              <Message />
+            </div>
+            <div className="otherUserMessages">
+              <OtherUserMessage />
+              <OtherUserMessage />
+              <OtherUserMessage />
+              <OtherUserMessage />
+              <OtherUserMessage />
+            </div>
+          </section>
         </div>
-        <Message />
       </main>
       <Footer />
     </>

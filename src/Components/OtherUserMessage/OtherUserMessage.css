@@ -1,26 +1,26 @@
-.message-container {
+.otherMessage-container {
   display: flex;
   flex-direction: column;
   grid-column: 2/3;
 }
 
-.message-container__card {
+.otherMessage-container__card {
   display: flex;
   gap: 0.5em;
 }
 
-.user-picture {
+.otherUser__picture {
   width: 60px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
-.Message-content {
+.otherMessage__content {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  background-color: var(--third-color);
+  color: white;
+  background-color: var(--second-color);
   border-radius: 16px;
   width: 20vw;
 }
