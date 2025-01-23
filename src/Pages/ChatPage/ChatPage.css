@@ -22,9 +22,11 @@ main {
 
 .messages-container {
   display: grid;
+  width: 100vw;
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: repeat(11, 1fr);
   padding-left: 5em;
+  padding-top: 0.5em;
 }
 
 .userMessages {
